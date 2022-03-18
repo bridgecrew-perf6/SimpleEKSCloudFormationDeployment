@@ -1,0 +1,13 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "EKS-Testing"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-ezj4j8cqkziz"
+s3_prefix = "EKS-Testing"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_NAMED_IAM"
+parameter_overrides = "NumWorkerNodes=\"2\" WorkerNodesInstanceType=\"t2.micro\""
+image_repositories = []
+profile = "marqiicommanddev"
